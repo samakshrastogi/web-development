@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sean Halpin</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <div class="">
+        
+    </div>
+    <div class="">
+        <img class="cloud" src="images/cloud.png" alt="cloud-img">
+        <h1><center><em>I'm Samaksh</em></center></h1>
+        <p class="p1"><center> a web designer.</center></p>
+        <img class="mountain" src="images/mountain.png" alt="mountain-img">
+    </div>
+</body>
+</html>
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Style.css
+
+h1{
+    color: #B5F1CC;
+    margin-top: 0;
+}
+body{
+    margin: 0;
+}
+.cloud{
+    height: 100px;
+    width: 300px;
+}
+.mountain{
+    height: 30%;
+    width: 30%;
+    
+    padding-left: 550px;
+}
