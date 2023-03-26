@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vortex Techonology</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+        <table>
+            <thead>
+                <tr>
+                    <td>
+                        <img src="vortex.gif" alt="Vortex Techonology">
+                        <center>
+                            <a class="google" href="https://www.nsnam.org/develop/tools/mailing-lists/"><h3>GOOGLE ISSUES Mailing List</h3></a>
+                            <br>
+                        </center>
+                    </td>
+                    <td class="block">
+                        <center>
+                            <h4>Vortex Techonology does NOT manufacture, provide,<br>
+                                sell, or service any tablets, cellular/mobile telephones,scopes,<br> 
+                                binoculars, or any other products.
+                          </h4>  
+                          <h3>VORTEX.COM</h3>
+                          <h4>Vortex Techonology</h4>
+                          <p>Woodland Hills, CA., U.S.A.</p>
+                          <p>TEL:+1 (818)225-2800</p>
+                          <br>
+                          <hr>
+                        </center>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <h3 class="Network">
+                            <a href="https://en.wikipedia.org/wiki/Net_neutrality"><strong><h3>Network Neutrality Squad</h3></strong></a>
+                            <p>From <a href="https://en.wikipedia.org/wiki/People_for_Internet_Responsibility#:~:text=The%20People%20For%20Internet%20Responsibility,in%20November%2C%201999%20in%20California">People For Internet Responsibility</a></p>
+                        </h3>
+                        <br>
+                        <a href="https://lauren.vortex.com/"><h2>Lauren Weinstein's Blog</h2></a>
+                        <a href="https://www.worldprivacyforum.org/"><strong><p><h3>The PRIVACY Forum</h3></p></strong></a>
+                    </td>
+                    <td>
+                        
+                        <center>
+                            <a href="https://resonatecoaching.co/"><h3>Lauren Weinstein</h3></a>
+                            <h3>
+                              <p>On <a href="https://en.wikipedia.org/wiki/Mastodon">Mastodon</a></p>
+                              <p>On <a href="https://en.wikipedia.org/wiki/Twitter">Twittwer</a></p>  
+                            </h3>
+                        </center>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>
+
+                    </td>
+                    <td width="50%" align="center" class="box">
+                            <a href="https://weather.com/en-IN/"><h3>Weather</h3></a>
+                            <a href="https://www.weather.gov/pbz/discussions"><h3>Forecast Discussion</h3></a>
+                            <a href="https://mausam.imd.gov.in/imd_latest/contents/satellite.php"><h3>Satellite Images</h3></a>
+                            <a href="https://mausam.imd.gov.in/imd_latest/contents/index_radar.php"><h3>Radar Images</h3></a>
+                            <a href="https://earthquake.usgs.gov/earthquakes/eventpage/ci40414104/executive"><h4><strong>L.A. Earthquakes</strong></h4></a>
+
+                        
+                        <p>
+
+                          <table border="1px">
+                              <thead>
+                                  <tr>
+                                      <td align="center">
+                                          <a href="https://www.factsquad.org/radio"><h3>Fact Squad Radio</h3></a>
+                                      </td>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                  <tr>
+                                      <td>
+                                          <a href="https://powerlisting.fandom.com/wiki/Reality_Reset"><h3>Reality Reset</h3></a>
+                                      </td>
+                                  </tr>
+                              </tbody>
+                          </table>
+                       </p> 
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+</body>
+</html>
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+style.css
+
+.google{
+    color: red;
+    font: bold;
+}
+.Network{
+    background-color:#F6F7C1;
+}
+h3{
+    color: blue;
+}
+img{
+    padding-left: 35px;
+    padding-top: 0px;
+}
+body{
+    padding-top: 0px;
+}
+.box{
+    border: solid;
+    background-color: aqua;
+}
+
