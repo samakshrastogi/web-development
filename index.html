@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        width: 100vw;
+        border-radius: 5px;
+        background-color: aqua;
+    }
+    header{
+        height: 4rem;
+        width: 100vw;
+        background-color: black;
+        padding: 0.5rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .logo:hover{
+        border: 1px solid white;
+    }
+    .logo img{
+        height: 3rem;
+        width: 4rem;
+    }
+    .address{
+        
+        width: 10rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .address:hover{
+        border: 1px solid white;
+    }
+    .address .addressimg img{
+        height: 3rem;
+        width: 1.5rem;
+    }
+    .address .deliver p{
+        color: white;
+    }
+    #deliver{
+        color: grey;
+        font-size: 0.8rem;
+        
+    }
+    #address{
+        font-weight: bold;
+    }
+    .searchbar{
+        margin: 1rem;
+        height: 100%;
+        width: 50rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .all{
+        height: 80%;
+        width: 4rem;
+        background-color: grey;
+        border-radius: 5px 0px 0px 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .all select{
+        width: 1rem;
+    }
+    .search{
+        height: 80%;
+        width: 45rem;
+    }
+    .search input{
+        height: 100%;
+        width: 100%;
+    }
+    .searchbtn{
+        height: 80%;
+        width: 4rem;
+        background-color: orange;
+        border-radius: 0px 5px 5px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .searchbtn img{
+        height: 2rem;
+        width: 2rem;
+    }
+    .language{
+        height: 100%;
+        width: 5rem;
+        
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .language:hover{
+        border: 1px solid white;
+    }
+    .language img{
+        height: 1rem;
+        width: 1.5rem;
+    }
+    .language p{
+        color: white;
+    }
+    .language select{
+        width: 1rem;
+    }
+    .userinfo{
+        height: 100%;
+        width: 12rem;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+    }
+    .userinfo:hover{
+        border: 1px solid white;
+    }
+    .userinfo p{
+        color: white;
+    }
+    #username{
+        font-size: 0.7rem;
+    }
+    #account{
+        font-size: 1.1rem;
+    }
+    .returnOrders{
+        height: 100%;
+        width: 9rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+    }
+    .returnOrders:hover{
+        border: 1px solid white ;
+    }
+    .returnOrders p{
+        color: white;
+    }
+    .cartbox{
+        height: 100%;
+        width: 9rem;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+    }
+    .cartbox:hover{
+        border: 1px solid white ;
+    }
+    .cartbox img{
+        height: 2rem;
+        width: 2rem;
+    }
+    .cartbox p{
+        color: white;
+        font-size:xx-large;
+    }
+    nav{
+        height: 3rem;
+        width: 100vw;
+        background-color: #111111a3;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav1{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+    nav p{
+        color: white;
+        margin-left: 1.2rem;
+    }
+    nav select{
+        width: 1rem;
+    }
+    main{
+        width: 100%;
+        height: 100%;
+        border: 1px solid;
+    }
+    .contentbox1{
+        width: 100vw;
+        height: 100%;
+        padding: 0rem 0.5rem 0rem 0.5rem;
+        border: 1px solid;
+        display: grid;
+        gap: 1rem;
+        grid-template-areas: 
+            "box1 box1 box1 box1"
+            "box1 box1 box1 box1"
+            "box1 box1 box1 box1"
+            "box2 box3 box4 box5"
+            "box2 box3 box4 box5"
+            "box2 box3 box4 box6"
+            "box2 box3 box4 box6"
+            "box7 box7 box8 box9"
+            "box7 box7 box8 box9"
+            ;
+    }
+    .item{
+        background-color: white;
+    }
+    
+    
+    #box1{
+        grid-area: box1;
+    }
+    #box2{
+        grid-area: box2;
+        width: 100%;
+    }
+    .textbox2{
+        height: 2rem;
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+    .contentbox2{
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        gap: 1rem;
+    }
+    .contentbox2 img{
+        height: 8rem;
+        width: 8rem;
+    }
+    #box3{
+        grid-area: box3;
+    }
+    #box4{
+        grid-area: box4;
+    }
+    #media{
+        height: 7rem;
+        width: 7rem;
+    }
+    #box5{
+        height: 10rem;
+        grid-area: box5;
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #box5 img{
+        height: 8rem;
+        width: 8rem;
+    }
+    #box6{
+        grid-area: box6;
+        height: 15rem;
+    
+    }
+    #box6 img{
+        height: 100%;
+        width: 100%;
+    }
+    #box7{
+        grid-area: box7;
+    }
+    #box7 img{
+        height: 29rem;
+        width: 100%;
+    }
+    #box8{
+        grid-area: box8;
+    }
+    #box9{
+        grid-area: box9;
+    }
+    #box1 img{
+        height: 20rem;
+        width: 100%;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="images/logo.png" alt="logo">
+            </div>
+            <div class="address">
+                <div class="addressimg">
+                    <img src="images/addresslogo.png" alt="addressimg">
+                </div>
+                <div class="deliver">
+                    <p id="deliver">Deliver to Samaksh</p>
+                    <p id="address">Mohali 140307</p>
+                </div>
+            </div>
+            <div class="searchbar">
+                <div class="all">
+                    <label for="categorylist">All</label>
+                    <select name="category" id="categorylist">
+                        <option value="All Categories">All Categories</option>
+                        <option value="Alexa Skills">Alexa Skills</option>
+                        <option value="Amazon Devices">Amazon Devices</option>
+                        <option value="Amazon Fashion">Amazon Fashion</option>
+                        <option value="Amazon Pharmacy">Amazon Pharmacy</option>
+                        <option value="Appliances">Appliances</option>
+                        <option value="Apps and Games">Apps and Games</option>
+                        <option value="Audible Audiobooks">Audible Audiobooks</option>
+                        <option value="Clothing and Accessories">Clothing and Accessories</option>
+                        <option value="Computer and Accessories">Computer and Accessories</option>
+                    </select>
+                </div>
+                <div class="search">
+                    <input type="text" placeholder="Search Amazon.in">
+                </div>
+                <div class="searchbtn">
+                    <img src="https://www.pngmart.com/files/8/Search-Button-PNG-Image-Free-Download.png" alt="searchbtn">
+                </div>
+            </div>
+            <div class="language">
+                <img src="https://th.bing.com/th/id/R.9a3e99c471ff6217b31376da021d0c37?rik=J7qQKqACKITOUA&riu=http%3a%2f%2fwww.happywalagift.com%2fwp-content%2fuploads%2f2015%2f08%2fIndia_flag-2016.jpg&ehk=PN385Fh%2bqQxUhCdlkgIxx1fJ%2bOXHNnI75Yn0eS4HQcw%3d&risl=&pid=ImgRaw&r=0" alt="indianflag">
+                <p>EN</p>
+                <select name="language" id="language">
+                    <option value="EN">English - EN</option>
+                    <option value="HI">हिंदी - HI</option>
+                    <option value="TA">தமிழ் - TA</option>
+                    <option value="TE">తెలుగు - TE</option>
+                    <option value="KA">ಕನ್ನಡ - KA</option>
+                    <option value="ML">മലയാളം - ML</option>
+                    <option value="BN">বাংলা - BN</option>
+                    <option value="MR">मराठी - MR</option>
+                </select>
+            </div>
+            <div class="userinfo">
+                <p id="username">Hello, Samaksh </p>
+                <p id="account">Account & Lists
+                <select name="" id="">
+
+                </select></p>
+            </div>
+            <div class="returnOrders">
+                <p id="username">Returns</p>
+                <p id="account"> & Orders</p>
+            </div>
+            <div class="cartbox">
+                <img src="https://icon-library.com/images/white-shopping-cart-icon/white-shopping-cart-icon-9.jpg" alt="cartimg">
+                <p>Cart</p>
+            </div>
+        </header>
+        <nav>
+            <div class="nav1">
+                <p><a href="#"></a>All</p>
+                <p><a href="#"></a>Amazon miniTV</p>
+                <p><a href="#"></a>Sell</p>
+                <p><a href="#"></a>Gift Cards</p>
+                <p><a href="#"></a>Buy Again</p>
+                <p><a href="#"></a>Amazon Business</p>
+                <select name="" id="">
+                    <option value=""></option>
+                    <option value=""></option>
+                </select>
+                <p><a href="#"></a>Browsing History</p>
+                <select name="" id="">
+                    <option value=""></option>
+                    <option value=""></option>
+                </select>
+                <p>Samaksh's Amazon</p>
+                <p>Coupons</p>
+                <p>Amazon Pay</p>
+                <p>Books</p>
+            </div>
+            <img src="https://m.media-amazon.com/images/G/31/img17/Home/AmazonTV/Playground/SWM_400x39._CB561512404_.jpg" alt="Playground img">
+        </nav>
+        <main>
+            <div class="contentbox1">
+                <div class="item" id="box1">
+                    <img src="images/front img.png" alt="img">
+                </div>
+                <div class="item" id="box2">
+                    <div class="textbox2">
+                        <h2>Pick up where you left off</h2>
+                    </div>
+                    <div class="contentbox2">
+                        <div class="item">
+                            <img src="https://m.media-amazon.com/images/I/61utX8kBDlL._AC_SY110_.jpg" alt="image">
+                            <p>Asian Men's Wonder</p>
+                        </div>
+                        <div class="item">
+                            <img src="https://m.media-amazon.com/images/I/61-5EOuD0xL._AC_SY110_.jpg" alt="img">
+                            <p>Campus Men's Storm</p>
+                        </div>
+                        <div class="item">
+                            <img src="https://m.media-amazon.com/images/I/61v-h68yXqL._AC_SY110_.jpg" alt="img">
+                            <p>Lancer Men's Sports</p>
+                        </div>
+                        <div class="item">
+                            <img src="https://m.media-amazon.com/images/I/61-G2UDgjiL._AC_SY110_.jpg" alt="img">
+                            <p>Campus Men's North</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" id="box3">
+                    <div class="textbox2">
+                        <h2>Shoes & handbags | Up to 60% off</h2>
+                    </div>
+                    <div class="contentbox2">
+                        <div class="item">
+                            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Softlines_JWL_SH_GW_Assets/2024/Apr/BTF/1st/QC_sportsPClow._SY116_CB561470299_.jpg" alt="img">
+                            <p>Sports Shoes</p>
+                        </div>
+                        <div class="item">
+                            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Softlines_JWL_SH_GW_Assets/2024/Apr/BTF/1st/Pcqc3-2-low._SY116_CB561470296_.jpg" alt="img">
+                            <p>Men's Shoes</p>
+                        </div>
+                        <div class="item">
+                            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Softlines_JWL_SH_GW_Assets/2024/Apr/BTF/1st/Pcqc3-3-low._SY116_CB561470296_.jpg" alt="img">
+                            <p>Women's Shoes</p>
+                        </div>
+                        <div class="item">
+                            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Softlines_JWL_SH_GW_Assets/2024/Apr/BTF/1st/Pcqc3-4-low._SY116_CB561470296_.jpg" alt="img">
+                            <p>Handbags</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" id="box4">
+                    <div class="textbox2">
+                        <h2>Categories to explore</h2>
+                    </div>
+                    <div class="contentbox2">
+                        <div class="item">
+                            <img id="media" src="https://m.media-amazon.com/images/I/41JvGgDobKL._MCnd_AC_.jpg" alt="img">
+                            <p>Men's Sneakers</p>
+                        </div>
+                        <div class="item">
+                            <img id="media" src="https://m.media-amazon.com/images/I/51rNnH4W+TL._MCnd_AC_.jpg" alt="img">
+                            <p>Stationary products</p>
+                        </div>
+                        <div class="item">
+                            <img id="media" src="https://m.media-amazon.com/images/I/412o5Jq0TXL._MCnd_AC_.jpg" alt="img">
+                            <p>Men's Basketball</p>
+                        </div>
+                        <div class="item">
+                            <img id="media" src="https://m.media-amazon.com/images/I/31y-oJ1XnqL._MCnd_AC_.jpg" alt="img">
+                            <p>Mice</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="item" id="box5">
+                       <div class="box51">
+                            <h3>Save up to 28% with GST* </h3>
+                            <a href="#">Register now</a>
+                       </div>
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/AmazonBusiness/SOA/feb24_SOA_hpsw_115x115._CB581218979_.jpg" alt="img">
+                </div>
+                <div class="item" id="box6">
+                    <img src="images/Asian Sponsorship.png" alt="">
+                </div>
+                <div class="item" id="box7">
+                    <img src="images/Amazon Sponsorship .png" alt="">
+                </div>
+                <div class="item" id="box8">
+                    <div class="textbox2">
+                        <h2>Revamp your home in style</h2>
+                    </div>
+                    <div class="contentbox2">
+                        <div class="item">
+                            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/186x116_Home_furnishings_2._SY116_CB584596691_.jpg" alt="Cushion covers, bedsheets & more">
+                            <p>Cushion covers, bedsheets & more</p>
+                        </div>
+                        <div class="item">
+                            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/186x116_Home_decor_1._SY116_CB584596691_.jpg" alt="img">
+                            <p>Figurines, vases and more</p>
+                        </div>
+                        <div class="item">
+                            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/186x116_Home_storage_1._SY116_CB584596691_.jpg" alt="Home Storage">
+                            <p>Home Storage</p>
+                        </div>
+                        <div class="item">
+                            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/186x116_Home_lighting_2._SY116_CB584596691_.jpg" alt="img">
+                            <p>Lightning solutions</p>
+                        </div>
+                        <a href="#">Explore all</a>
+                    </div>
+                </div>
+
+                <div class="item" id="box9">
+                    <div class="textbox2">
+                        <h2>Categories to explore</h2>
+                    </div>
+                    <div class="contentbox2">
+                        <div class="item">
+                            <img id="media" src="https://m.media-amazon.com/images/I/41JvGgDobKL._MCnd_AC_.jpg" alt="img">
+                            <p>Men's Sneakers</p>
+                        </div>
+                        <div class="item">
+                            <img id="media" src="https://m.media-amazon.com/images/I/51rNnH4W+TL._MCnd_AC_.jpg" alt="img">
+                            <p>Stationary products</p>
+                        </div>
+                        <div class="item">
+                            <img id="media" src="https://m.media-amazon.com/images/I/412o5Jq0TXL._MCnd_AC_.jpg" alt="img">
+                            <p>Men's Basketball</p>
+                        </div>
+                        <div class="item">
+                            <img id="media" src="https://m.media-amazon.com/images/I/31y-oJ1XnqL._MCnd_AC_.jpg" alt="img">
+                            <p>Mice</p>
+                        </div>
+                        <a href="#">See all offers</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
