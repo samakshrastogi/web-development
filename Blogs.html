@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sam Blogs</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    width: 100vw;
+    margin: 0;
+   
+}
+.container{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(167, 165, 179);
+    border: 2px solid;    
+}
+.text{
+    background-color: #FFFFFF;
+    background-image: linear-gradient(180deg, #FFFFFF 0%, #6284FF 50%, #FF0000 100%);
+    height: 3rem;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img{ 
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.img img{
+    height: 17rem;
+    width: 17rem;
+    margin-top: 2rem;
+}
+
+.grid{
+    padding: 2rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-rows: repeat(21,1fr);
+    grid-template-columns: repeat(1,1fr);
+}
+.item{
+    border: 2px solid;
+    height: 20rem;
+
+}
+.frame{
+    height: 80%;
+}
+.contentbox{
+    padding: 5px;
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    height: 3rem;
+    width: 3rem;
+}
+.name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.name p{
+    text-align: center;
+}
+
+@media (min-width: 750px) {
+    .text{
+        text-align: center;
+        background-color: #FFFFFF;
+        background-image: linear-gradient(180deg, #FFFFFF 0%, #6284FF 50%, #FF0000 100%);
+        height: 100px;
+        font-size: 2rem;
+    }
+    .img{
+        padding: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .img img{
+        height: 30rem;
+        width: 30rem;
+    }
+    
+    .grid{
+        padding: 2rem;
+        display: grid;
+        gap: 1rem;
+        grid-template-rows: repeat(7,1fr);
+        grid-template-columns: repeat(3,1fr);
+    }
+    .item{
+        border: 2px solid;
+        height: 20rem;
+    
+    }
+    .frame{
+        height: 80%;
+    }
+    .contentbox{
+        padding: 5px;
+        height: 20%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #8EC5FC;
+        background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo img{
+        height: 3rem;
+        width: 3rem;
+    }
+    .name{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .name p{
+        text-align: center;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text">
+            <h1>SAM BLOGS</h1>
+        </div>
+        <div class="img">
+            <img src="https://lh3.googleusercontent.com/pw/AP1GczO4j18mz2TtlcDPieDRgYIwLgR_DBAoZ-9rL2vOO85g7EUT_DMc0vUDRcxmFvkpIYRuOPmD6ny9gDMP-HUcfoKeREmLS3fiRfXHnXm0xy1ADo4YAiTcejsgOL9RPOwBrYoJo8Mht7BPgX_UEWONngpbbLlMK6cKQ8UN2YiAnPQARDU6tyY3R4ms6AlmDQuJE_X_PbsHCgHNtrMD7lVs8yUwCZ98h7N_Elu9LuHTtT_RAU_iwU-CvYb3hqUtSZgGa9EjNjvoN2L2zSTrs74fgqm9A5g39DkQCj2eK5LMPUYlxccA6jRwZzBrhLmPiBV4ZEZYdAFa2PZv0azENoiTxrCAWLbMRW6-rDIXMJe6GTlQ-Sad8ytnlqYDs8AWmXULCsIcQR_Qnb5zV9lhNKS4axEQo_-6C4TUyn_94pT_w8Nk3-qH4jXaYIOHzGwd-RFi42OEYmhaGVUtPE5GkdvVEkzscyZgTRrw2oOxEFlPM_-N6MlBANdAGuziPRvPKhpGFXuuDaA02xFBekwQ755YfL4wbVv2zQjhlNjmpmUDO_Eh4RAtYf53ytRcjH2NyeLrnzrisi7kOg4nwoCzszpt9is4stR1TWly1Xkmxtp8cwoH5vB5P0LWEIAqxDgaXxT06S2aJsTuInkLxWvMkrsToMkEe9bDFfSNQimAcm5jZGqeUpn07Bi5WEV1uQaOTVKb6PVYBxWOfD0r3xpHYzJtBCQF2HUsUVWz35RrVL9pnIQtcFVXJ8qDlW4oIBf5zDr8lLqjTE0GNx_ubJ4r5ENhZ5bz1Q4XzoYRh5937RH9tOPRn8FlcGelfTNz6fGNpntILlesHsc--netbM1Xtq116oYkgzRaSr3cjFwjL1SbTyJeVlexfkSAM3rsvgAaLyxmtUfQI0xMZmUNgR1aSOVWdb5eNdr9SBuWgP0qR_rpRohpyWm5JDoNWg1FDfduzWeWg9rD8tPG2gfnJdBaZlwWHq66XWmdmQ=w592-h444-no?authuser=0" alt="1">
+            <img src="https://lh3.googleusercontent.com/pw/AP1GczNrQF_ecM5BQWnINpKNb5RNWG40hf3k5lhDbF5bP3X5Q39eMFsakLGw3gehxA9UPx35tqDC8ngwet9cVxkO1I3omjrUW0enjAbW4npMYJ5MLRL8bi9KFaaoI2VtDAsulCs51RopzisFYc_mHksuqjxOcbAnwLIhl2HpOovI3VjM3DhkKM3RGQC_TPaQ6T8wLnkNryNQeldCwpkEiKiwChBsqYF6h_MkN41twlQ9RyujVs-71v_Ak7T8ph2djk3boMIycSTdbTZxXpNLdtAqfhikzXjVhsGzOo6Bn_GXwYqf4pNAXGHUc2OvnSJD_fT021cLBUAtg7dnaCurggYC-1C_zFSq4nRKKm1xx-mxokT93aw4dXUiFXIVpwwafw7szb92T1QT3TR21WGOqDhbpZdwZo1alxu405yceNMVUvgFPPk0w-C_be1AOP-Tel95GLeZmECTgt5v_XabKggn-QLiBpdsOpqtDmZUPN9Xkl8qSoaolztxmaXPuzh4bXPstX1KagqspL3hy3oee0I07VUDeCayhbxgNVUJxrqU2be8959a3ysZa17MLBvp3uUBN2bpLLDAc_nkZhSkWr2Dh0YUZkvxa39-3z07kfW8ajW3UXIPv_RZixvad9Tlhj9BeJ3UE3ui5_KXcxQm7h7EFt71AoYTGpupArxmWMXMU4KvAilNVt6fnurzMVUBKp9Vi6Po96GXJn0qLy8CHdHOuocuBsLXUGQXaHlL8ql2uqS2dDbiJrkPvGHQeiGxMDrZ-by5irUXu4ImHAEeug46wsqVu6GtmUyuyauIwna2zmsxyw6bocfMIcJnCRUiArfc1xuNc46NrSXNdLbdSpfSIxASefMLzSXwB-A9nfxHzWvd6MenXFx7BGWlcnHxp6aqDU-tR2iPg301Ktvx4czHy59Rch6P2PEjuJfUeT0D9QoUtAtpRku-jgsiMn5D_gRtFA5yYEhzHW8xc7u4b2lVDuteVr3YXA=w521-h928-s-no-gm?authuser=0" alt="2">
+            <img src="https://lh3.googleusercontent.com/pw/AP1GczMCItiTkeByPvLuvG_kY2H3pRuz6yW17josa6sTFoKUZciDcTPtbmtUWYNoaMUbucDCSRnTlfqTLZnoG1exP8scwxtHy4aQNcaymRBtKqxLCDCfsyiJ7-y1bh4M7S6V9oDxjQFaM78DzNA5auyxszxASLl3dLQntT3INCDYQrS0_8ic3w0CopMivzITXemB7m_4YpdgMNSlECe6xOlmj7IzNCr7L8RG234sjPYSTv1ygyIKHbZUGWoqdRr5jvpYlhULKhACkuVRp7q-2u8Yyf-say_aKBdpTSWR9L5bqCFai2-Gxxu0LsZHhh31blsZiXO7LDyixQRiEYSro3_6b4w07B8dkLA1zFYmwBiV47x5kCww32XQ47ehppQf1WZSDCL1FJoeURKXLUO7pj6kSkbjdQO3UwF6R2vTmxuTn5vYnCtMUXTLhpCDp_iysI6jM4LukdEJUdMinjyy46Wsh5ismGtKP4nDHQhrtaQLMyx1LWU6fPDXPQ0KKYejEdo7AJQJOoRpT-Qioyw1MLqbEsrRKW4_Qp6GJUkTC4KLse05uCzYrnnRMdOS3g8ebWuGAqkIbZy-4xXCKWnlKbcqz19HCfgSVhGb7gsK0j9tpkOo5-aOxv2SKl8T8ij2WaMeJxCv8P4ZEOk5a-s7ORCSZZTfRZG1s2Zt6DjtjM6EwZDTqjzNsDtqMO02xp3asDUGp1SD9XCSTPeQsEU0zATZMQC4peCsE-nihyGidnyBpez66qzBaaz-VkSGPGnk-1HDG1ZCYojWovcutAGEhB9VUFXKOkovjQ0H9WVnTKsF4_0fwKVb0tI-ysLegP-3NRwsWTRGPNVe6uXFTOjQNH879EGAiJJnp8JMHCiIIgjBbL8nX90t_ra_rr4NsJNpkU1qDeVoHdZC6NK1A81GYXTp_QB0qQM_z0yOT50GqXX7gcT82-XwD0fgpmpJDwrq2wRt2iS_2YJYaNJvnaqjD05stZBEEZjQ=w1236-h928-s-no-gm?authuser=0" alt="3">
+        </div>
+        <div class="grid">
+            <div class="item">
+                <div class="frame">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/5tNdzCDRuwM?si=cjo_y28J_h8togaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="contentbox">
+                    <div class="logo">
+                        <img src="https://www.creativefabrica.com/wp-content/uploads/2018/09/Initial-Letter-S-Logo-Designs-Inspiration-Vector-Illustration-by-yahyaanasatokillah.jpg" alt="logo">    
+                    </div>
+                    <div class="name"><p>Improving Speaking Skills Day 1</p></div>
+                    <div class="category"><p>A</p></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="frame">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/6TPcwWHZN_0?si=ys8gvQdjL0SQGCQ9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="contentbox">
+                    <div class="logo">
+                        <img src="https://www.creativefabrica.com/wp-content/uploads/2018/09/Initial-Letter-S-Logo-Designs-Inspiration-Vector-Illustration-by-yahyaanasatokillah.jpg" alt="logo">    
+                    </div>
+                    <div class="name"><p>Jag Ghoomeya Song</p></div>
+                    <div class="category"><p>A</p></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="frame">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/94XJ_F4Z71g?si=rEOiAoZKsyp_UAVU&amp;start=2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="contentbox">
+                    <div class="logo">
+                        <img src="https://www.creativefabrica.com/wp-content/uploads/2018/09/Initial-Letter-S-Logo-Designs-Inspiration-Vector-Illustration-by-yahyaanasatokillah.jpg" alt="logo">    
+                    </div>
+                    <div class="name"><p>Hum Tum Song</p></div>
+                    <div class="category"><p>A</p></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="frame">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ajGo94h0JxE?si=euwXbIqnUVxvO7p2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="contentbox">
+                    <div class="logo">
+                        <img src="https://www.creativefabrica.com/wp-content/uploads/2018/09/Initial-Letter-S-Logo-Designs-Inspiration-Vector-Illustration-by-yahyaanasatokillah.jpg" alt="logo">    
+                    </div>
+                    <div class="name"><p>Bolo Na Song</p></div>
+                    <div class="category"><p>A</p></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="frame">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/j92cAgGQdJ0?si=qMvlHTmKGKKcAIHK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="contentbox">
+                    <div class="logo">
+                        <img src="https://www.creativefabrica.com/wp-content/uploads/2018/09/Initial-Letter-S-Logo-Designs-Inspiration-Vector-Illustration-by-yahyaanasatokillah.jpg" alt="logo">    
+                    </div>
+                    <div class="name"><p>Koi Na Koi Nata Hai Song</p></div>
+                    <div class="category"><p>A</p></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="frame">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/8WGJV2N08eQ?si=pAOhuyeH56W_H74L&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="contentbox">
+                    <div class="logo">
+                        <img src="https://www.creativefabrica.com/wp-content/uploads/2018/09/Initial-Letter-S-Logo-Designs-Inspiration-Vector-Illustration-by-yahyaanasatokillah.jpg" alt="logo">    
+                    </div>
+                    <div class="name"><p>Dhoonde Akhiyaan Song</p></div>
+                    <div class="category"><p>A</p></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="frame">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/woS-1KShYmY?si=VTHJMcKt0ml518M9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="contentbox">
+                    <div class="logo">
+                        <img src="https://www.creativefabrica.com/wp-content/uploads/2018/09/Initial-Letter-S-Logo-Designs-Inspiration-Vector-Illustration-by-yahyaanasatokillah.jpg" alt="logo">    
+                    </div>
+                    <div class="name"><p>Ankhiyan Teri Mere Dil pe War Kare Song</p></div>
+                    <div class="category"><p>A</p></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="frame">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/GjfxDRRLXAQ?si=F0j-CqoFW760l3do" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="contentbox">
+                    <div class="logo">
+                        <img src="https://www.creativefabrica.com/wp-content/uploads/2018/09/Initial-Letter-S-Logo-Designs-Inspiration-Vector-Illustration-by-yahyaanasatokillah.jpg" alt="logo">    
+                    </div>
+                    <div class="name"><p>Rabba Janda Song</p></div>
+                    <div class="category"><p>A</p></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="frame">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/mxWBW--yoiA?si=JNV2mOpJ4IuHPJ6I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="contentbox">
+                    <div class="logo">
+                        <img src="https://www.creativefabrica.com/wp-content/uploads/2018/09/Initial-Letter-S-Logo-Designs-Inspiration-Vector-Illustration-by-yahyaanasatokillah.jpg" alt="logo">    
+                    </div>
+                    <div class="name"><p>Lae Dooba Song</p></div>
+                    <div class="category"><p>A</p></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="frame">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/jShrugmqpF4?si=pA6-hq3GGGWdB7TW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="contentbox">
+                    <div class="logo">
+                        <img src="https://www.creativefabrica.com/wp-content/uploads/2018/09/Initial-Letter-S-Logo-Designs-Inspiration-Vector-Illustration-by-yahyaanasatokillah.jpg" alt="logo">    
+                    </div>
+                    <div class="name"><p>Mai Marjawangi Song</p></div>
+                    <div class="category"><p>A</p></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="frame">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/dx4Teh-nv3A?si=1JcVbFc3G6SWDdaD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="contentbox">
+                    <div class="logo">
+                        <img src="https://www.creativefabrica.com/wp-content/uploads/2018/09/Initial-Letter-S-Logo-Designs-Inspiration-Vector-Illustration-by-yahyaanasatokillah.jpg" alt="logo">    
+                    </div>
+                    <div class="name"><p>Namo Namo Song</p></div>
+                    <div class="category"><p>A</p></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="frame">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/QlCyFYY1_jA?si=MrV7IDEL7-9OkJ-a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="contentbox">
+                    <div class="logo">
+                        <img src="https://www.creativefabrica.com/wp-content/uploads/2018/09/Initial-Letter-S-Logo-Designs-Inspiration-Vector-Illustration-by-yahyaanasatokillah.jpg" alt="logo">    
+                    </div>
+                    <div class="name"><p>Sunn Le Zara Song</p></div>
+                    <div class="category"><p>A</p></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="frame">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/LIUZgV2v7yg?si=xixznsWDn_vtSOPZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="contentbox">
+                    <div class="logo">
+                        <img src="https://www.creativefabrica.com/wp-content/uploads/2018/09/Initial-Letter-S-Logo-Designs-Inspiration-Vector-Illustration-by-yahyaanasatokillah.jpg" alt="logo">    
+                    </div>
+                    <div class="name"><p>Tu Milta hai Mujhe Song</p></div>
+                    <div class="category"><p>A</p></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="frame">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/yBa3FVQKAvY?si=zpiIS5Az3tiFQ2PW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="contentbox">
+                    <div class="logo">
+                        <img src="https://www.creativefabrica.com/wp-content/uploads/2018/09/Initial-Letter-S-Logo-Designs-Inspiration-Vector-Illustration-by-yahyaanasatokillah.jpg" alt="logo">    
+                    </div>
+                    <div class="name"><p>Tu Hi Mera Song</p></div>
+                    <div class="category"><p>A</p></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="frame">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/BddP6PYo2gs?si=hpHOla3x05lCG63M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="contentbox">
+                    <div class="logo">
+                        <img src="https://www.creativefabrica.com/wp-content/uploads/2018/09/Initial-Letter-S-Logo-Designs-Inspiration-Vector-Illustration-by-yahyaanasatokillah.jpg" alt="logo">    
+                    </div>
+                    <div class="name"><p>Kesariya Song</p></div>
+                    <div class="category"><p>A</p></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="frame">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/a6cJAFFQn_I?si=uaOnQ7QO7O4ArkId" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="contentbox">
+                    <div class="logo">
+                        <img src="https://www.creativefabrica.com/wp-content/uploads/2018/09/Initial-Letter-S-Logo-Designs-Inspiration-Vector-Illustration-by-yahyaanasatokillah.jpg" alt="logo">    
+                    </div>
+                    <div class="name"><p>Jaan Ban Gaye Song</p></div>
+                    <div class="category"><p>A</p></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="frame">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/0KNk-Joi-NM?si=B2GHS3FIj5ClTJrH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="contentbox">
+                    <div class="logo">
+                        <img src="https://www.creativefabrica.com/wp-content/uploads/2018/09/Initial-Letter-S-Logo-Designs-Inspiration-Vector-Illustration-by-yahyaanasatokillah.jpg" alt="logo">    
+                    </div>
+                    <div class="name"><p>Tera Ghata Song</p></div>
+                    <div class="category"><p>A</p></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="frame">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/tG0S4Br98Z8?si=m105bBHHT9R9sNiJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="contentbox">
+                    <div class="logo">
+                        <img src="https://www.creativefabrica.com/wp-content/uploads/2018/09/Initial-Letter-S-Logo-Designs-Inspiration-Vector-Illustration-by-yahyaanasatokillah.jpg" alt="logo">    
+                    </div>
+                    <div class="name"><p>Baatein Ye Kabhi Na Song</p></div>
+                    <div class="category"><p>A</p></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="frame">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/wnWgkY1LGW4?si=V6iOmIsd_8wwCM-s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="contentbox">
+                    <div class="logo">
+                        <img src="https://www.creativefabrica.com/wp-content/uploads/2018/09/Initial-Letter-S-Logo-Designs-Inspiration-Vector-Illustration-by-yahyaanasatokillah.jpg" alt="logo">    
+                    </div>
+                    <div class="name"><p>Sanam Teri Kasam Song</p></div>
+                    <div class="category"><p>A</p></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="frame">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/gBvwiYnzlhw?si=LsSY0dOfi03QWQWc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="contentbox">
+                    <div class="logo">
+                        <img src="https://www.creativefabrica.com/wp-content/uploads/2018/09/Initial-Letter-S-Logo-Designs-Inspiration-Vector-Illustration-by-yahyaanasatokillah.jpg" alt="logo">    
+                    </div>
+                    <div class="name"><p>Bewajah Song</p></div>
+                    <div class="category"><p>A</p></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="frame">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ot3rnyMoPpQ?si=lxBuIjGRyU3aoAgf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="contentbox">
+                    <div class="logo">
+                        <img src="https://www.creativefabrica.com/wp-content/uploads/2018/09/Initial-Letter-S-Logo-Designs-Inspiration-Vector-Illustration-by-yahyaanasatokillah.jpg" alt="logo">    
+                    </div>
+                    <div class="name"><p>Tera Chehra Song</p></div>
+                    <div class="category"><p>A</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
